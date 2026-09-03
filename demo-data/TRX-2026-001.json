@@ -1,0 +1,22 @@
+{
+  "case_id":"TRX-2026-001",
+  "name":"Warehouse Perimeter Incident",
+  "date":"2026-08-28",
+  "timezone":"Asia/Kolkata",
+  "oems":["HIKVISION","DAHUA","CP PLUS","UNIVIEW","MATRIX","HONEYWELL","TP-LINK","GODREJ"],
+  "cameras":[
+    {"id":"CAM-01","location":"NORTH GATE","oem":"HIKVISION"},
+    {"id":"CAM-02","location":"LOADING BAY","oem":"DAHUA"},
+    {"id":"CAM-03","location":"PERIMETER","oem":"CP PLUS"},
+    {"id":"CAM-04","location":"REAR GATE","oem":"UNIVIEW"}
+  ],
+  "events":[
+    {"time":"22:14:17","type":"PERSON","camera":"CAM-01","confidence":0.982},
+    {"time":"22:14:31","type":"VEHICLE","camera":"CAM-02","confidence":0.941},
+    {"time":"22:15:04","type":"MOTION","camera":"CAM-03","confidence":0.916},
+    {"time":"22:18:42","type":"CORRELATION","camera":"CAM-01 -> CAM-03","confidence":0.874},
+    {"time":"22:31:12","type":"GAP","camera":"CAM-03","confidence":null},
+    {"time":"22:33:47","type":"RECOVERED","camera":"CAM-03","confidence":1.0},
+    {"time":"22:41:08","type":"PERSON","camera":"CAM-04","confidence":0.937}
+  ]
+}
