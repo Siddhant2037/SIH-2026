@@ -1,0 +1,1 @@
+Demo media is intentionally referenced from public Intel sample-video URLs in the UI. The samples include person and person/bicycle/car detection material. For an offline presentation, download those sample files from the Intel sample-videos repository and place them here using the names in main.tsx.
